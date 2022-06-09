@@ -69,3 +69,44 @@
 // but arrays and functions show similar behaviour
 // because they are derived from Object Prototype
 // protoype has the ability to store newly created properties/keys.
+
+
+
+
+// generator function
+// function* range(n){
+//     for(let i = 0; i<n; i++){
+//         yield i;
+//     }
+// }
+// let iterator1 = range(5);
+// let iterator2 = range(10);
+// iterations
+// console.log(iterator1.next());
+// console.log(iterator1.next());
+// console.log(iterator1.next());
+// console.log(iterator1.next());
+// console.log(iterator1.next());
+
+// buffers work on genrators.(youtube)
+// genrators can be unpacked using spread operator.
+// console.log([...iterator2]);
+
+
+
+// call-backs is a function which we pass to another function to call it for us.
+// function caller_function(name, callback){
+//     console.log("Hi "+name+".");
+//     callback();
+// }
+// function called_function(){
+//     console.log("I am getting called: caller");
+// }
+// caller_function("Newton",called_function);
+// used typically in async environment.
+console.log("I am executing first!");
+function callback(){
+    console.log("Here in function");
+}
+setTimeout(callback,5000);
+console.log("I am executed after function.");

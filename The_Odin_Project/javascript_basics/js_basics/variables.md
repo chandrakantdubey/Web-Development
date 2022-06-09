@@ -1,4 +1,3 @@
-/*
 # Variables are "named storage containers" to store data.
 We can imagine variable as a box labeled 'message'.
 It contains a value "Hello".
@@ -39,4 +38,3 @@ What are the increment/decrement operators?
 What is the difference between prefixing and post-fixing them?
 What are assignment operators?
 What is the “Unary +” Operator?
- */
