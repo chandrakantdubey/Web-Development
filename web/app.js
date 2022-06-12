@@ -71,8 +71,9 @@ console.log(Array.isArray(navItems));
 // this gives false as it is html collection
 
 // converting collection to array
-navItems = Arrays.from(navItems);
-
+navItems = Array.from(navItems);
+console.log(Array.isArray(navItems));
+// now forEach can be used
 // using querySelectorAll
 const newNav = document.querySelectorAll(".nav-item");
 console.log(newNav);
@@ -88,6 +89,3 @@ for(let i = 0; i < navItemItr.length; i++){
     navItem.style.color = "olive";
     navItem.style.fontWeight = "bold";
 }
-
-
-
