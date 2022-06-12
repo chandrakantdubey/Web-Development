@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- <script src="./app.js"></script> -->
+    <!-- browser will read the file line by line and while parsing it will detect js file and will start loading js file. after parsing the browser will stop reading the file and start executing and it will produce error because the elements accessed by js will not be found. -->
+
+    <!-- <script src="./app.js" async></script> -->
+    <!-- broswer will start parsing the file line by line and on reaching the js it will not stop parsing but run both parsing of file and js file loading, once the js file is completely loaded  parsing will stop and js execution will start. even this will issue as document file is parsed partially only -->
+
+    <script src="./app.js" defer></script>
+    <!-- browser will start parsing and will start loading js file. but the broswer will not stop parsing when js loading completes. browser start execution after parsing is complete -->
+
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <h1 class="logo">Website</h1>
+            <ul class="items">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="">Todo</a></li>
+                <li class="nav-item"><a href="">Sign up</a></li>
+            </ul>
+        </nav>
+        <div class="headline">
+            <h2 id="main-heading">Manager for your tasks <span style="display: none;">Hello</span>
+            </h2>
+            <button class="btn btn-headline">Learn More</button>
+        </div>
+    </header>
+    <section class="todo-section container">
+        <h2>Manage your today's plan</h2>
+        <form action="" class="form-todo">
+            <input type="text" name="" id="" placeholder="Add todo">
+            <input type="submit" value="Add Todo" class="btn">
+        </form>
+    </section>
+    <section class="section-signup container">
+        <h2>Sign Up</h2>
+        <form action="" class="signup-form">
+            <div class="form-group">
+                <label for="username" name="username" id="username">Username</label>
+                <input type="text" name="" id="">
+            </div>
+            <div class="form-group">
+                <label for="password" name="password" id="password">password</label>
+                <input type="password" name="" id="">
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword" name="confirmPassword" id="confirmPassword">Confirm Password</label>
+                <input type="password" name="" id="">
+            </div>
+            <div class="form-group">
+                <label for="phone" name="phone" id="phone">Phone</label>
+                <input type="phone" name="" id="">
+            </div>
+            <div class="form-group">
+                <label for="email" name="email" id="email">Email</label>
+                <input type="email" name="" id="">
+            </div>
+            <div class="form-group">
+                <label for="about">About Yourself</label>
+                <textarea type="text"  name="about" id="about" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn signup-btn">Submit</button>
+        </form>
+    </section>
+    <!-- <script src="./app.js"></script> -->
+    <!-- browser will start parsing and will detect js file and start loading js file and then execute and it will execute as the browser has already loaded the html element -->
+    <!-- but this also has issue: html parsing will take time, js loading will take time, js execution is taking time-->
+    <!--  -->
+</body>
+</html>
