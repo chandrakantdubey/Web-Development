@@ -59,7 +59,7 @@ console.log(inputElement.getAttribute("type"));
 
 
 // getting multiple elements using getElementsByClassName
-const navItems = document.getElementsByClassName("nav-item");
+let navItems = document.getElementsByClassName("nav-item");
 console.log(navItems[1]);
 // this gives a html element which is array like object
 // length property and allows indexing for iteration
@@ -69,6 +69,9 @@ console.log(typeof navItems);
 // this is not an array checking
 console.log(Array.isArray(navItems));
 // this gives false as it is html collection
+
+// converting collection to array
+navItems = Arrays.from(navItems);
 
 // using querySelectorAll
 const newNav = document.querySelectorAll(".nav-item");
@@ -85,5 +88,6 @@ for(let i = 0; i < navItemItr.length; i++){
     navItem.style.color = "olive";
     navItem.style.fontWeight = "bold";
 }
+
 
 
