@@ -25,4 +25,5 @@
     // text-node
 
 const rootNode = document.getRootNode();
-console.dir(rootNode.childNodes[1].childNodes);
+console.dir(rootNode.childNodes[1].childNodes[0].nextSibling);
+// const sibling = document.
