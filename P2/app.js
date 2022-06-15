@@ -24,14 +24,14 @@ next.addEventListener('click', ()=>{
     // update();
 })
 
-// function update(){
-//     circle.forEach((circles, idx) => {
-//         if(idx < currentActive){
-//             circles.classList.add('active');
-//         }else{
-//             circles.classList.remove('active');
-//         }    
-//     });
+function update(){
+    circle.forEach((circles, idx) => {
+        if(idx < currentActive){
+            circles.classList.add('active');
+        }else{
+            circles.classList.remove('active');
+        }    
+    });
 
 //     const actives = document.querySelectorAll('active');
 

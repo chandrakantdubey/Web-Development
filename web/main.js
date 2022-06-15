@@ -24,6 +24,26 @@
     // element-node
     // text-node
 
-const rootNode = document.getRootNode();
-console.dir(rootNode.childNodes[1].childNodes[0].nextSibling);
-// const sibling = document.
+// const rootNode = document.getRootNode();
+// console.log(rootNode.childNodes);
+// const htmlElementNode = rootNode.childNodes[0];
+// console.log(htmlElementNode.childNodes);
+// NodeList(3) [head, text, body]
+// const headElementNode = htmlElementNode.childNodes[0];
+// const textElementNode = htmlElementNode.childNodes[1];
+// const bodyElementNode = htmlElementNode.childNodes[2];
+// console.log(headElementNode.childNodes);
+// element sibling ignore the white spaces
+
+// const h1 = document.querySelector('h1');
+// const nav = h1.parentNode;
+// nav.style.color = "blue";
+// const body = document.body;
+// body.style.color = "steelblue";
+// const head = document.querySelector('head');
+// title = head.querySelector('title');
+// title.innerHTML = "Javascript Tuts";
+
+// const container = document.querySelector('.container');
+// console.log(container.children);
+// using children slects only the tags and not the white spaces.
