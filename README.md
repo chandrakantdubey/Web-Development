@@ -2,6 +2,6 @@
 
 Hi, my name is Chandrakant and this is a track of my journey to web development.
 
-This repository is built to include all my lessons from my classes, things i learn from youtube and other websites.
+This repository is built to include all my lessons from my classes, things I learn from youtube and other websites.
 
 I am also including all the projects I will do all along my journey.
