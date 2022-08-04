@@ -1,0 +1,56 @@
+.container{
+    width: 300px;
+    height: 400px;
+    background-color: #256;
+    margin: auto;
+    border: 10px #253 solid;
+    border-radius: 5px;
+    transform: rotate(0.25turn);
+}
+.cap{
+    width: 60px;
+    height: 35px;
+}
+.sleeve{
+    width: 165px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-left: 24px double black;
+    border-right: 12px solid black;
+}
+.cap, .sleeve{
+    display: inline-block;
+}
+.crayon{
+    width: 290px;
+    height: 35px;
+    margin: 8px auto;
+    border-radius: 20px;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+.orange{
+    background-color: orange;
+}
+.pink{
+    background-color: pink;
+}
+.brown{
+    background-color: brown;
+}
+.black{
+    background-color: black;
+}
+.white{
+    background-color: white;
+}

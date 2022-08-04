@@ -6,9 +6,10 @@ body {
     margin: 0;
 }
 
-/* html is by default responsive. adding thw width and height in fixed units takes away the responsiveness.
-By defaulta ll the block elements occupy the width of 100% of their parent.
+/* html is by default responsive. adding the width and height in fixed units takes away the responsiveness.
+By default all the block elements occupy the width of 100% of their parent.
 Setting width and height in % is useful to make the website page responsive */
+
 /* 1. adding fixed unit causes the child to overflow and doesn't look good when seen on larger screen either.
 2. using the overflow hidden cuts the content of the child. */
 
@@ -22,6 +23,7 @@ Setting width and height in % is useful to make the website page responsive */
     /* overflow: hidden; */
 }
 
+
 .child {
     background-color: #38cfd9;
     width: 100%;
@@ -34,7 +36,8 @@ Setting width and height in % is useful to make the website page responsive */
 .container {
     background-color: #38cfd9;
     width: 80%;
-    height: 80%;
-    padding: 1%;
+    height: 10%;
+    padding: 2%;
     margin: 10% auto;
+    font-size: 1.2rem;
 }

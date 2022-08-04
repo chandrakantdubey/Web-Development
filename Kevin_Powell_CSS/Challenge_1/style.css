@@ -24,14 +24,14 @@ body {
 .container {
     background: #23424a;
     color: white;
+    padding: 1%;
 
     width: 80%;
+    max-width: 750px;
     margin: auto;
-
-    padding: 2em;
 }
 
 .intro_content {
-    width: 100%;
+    width: 50%;
     height: 80%;
 }

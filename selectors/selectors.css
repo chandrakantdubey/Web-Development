@@ -1,0 +1,58 @@
+*{
+    /* this is a universal selector and applies to all the elements unless they are applied with other ruleset */
+    background-color: grey;
+}
+*|*{
+    /* matches all elements */
+    text-decoration: underline;
+}
+
+h1{
+    /* this is a type selector and selects the element based on the type*/
+    background-color: blanchedalmond;
+}
+*|h1 {
+    /* this selects all the h1 in the namespace */
+    color: hotpink;
+}
+h2[class]{
+    /* this applies to a content with name of the attribute */
+    color: blue;
+}
+
+
+.section-heading{
+    /* this is a class selector and can be shared across various elements */
+    background-color: white;
+}
+[class~="section-heading"]{
+    /* class selector equivalent attribute selector */
+    padding: 5px;
+}
+
+
+#italic{
+    /* this is a id selector and is use to select unique elements and is only one on the page */
+    font-style: italic;
+}
+[id="italic"]{
+    /* equivalent attribute of id selector */
+    text-decoration: overline;
+}
+
+
+/* A href that contains "example.com" */
+[href*='example.com'] {
+  color: red;
+}
+
+/* A href that starts with https */
+[href^='https'] {
+  color: green;
+}
+
+/* A href that ends with .com */
+[href$='.com'] {
+  color: blue;
+  
+}
