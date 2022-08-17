@@ -9,10 +9,10 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 /* Some default styles to make each box visible */
 .box {
   color:white;
-  font-size: 50px;
+  font-size: 100px;
   text-align: center;
-  text-shadow:4px 4px 0 rgba(0,0,0,0.1);
-  padding:10px;
+  text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+  padding: 10px;
 }
 
 /* Colours for each box */
@@ -29,26 +29,74 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 
 /* We start writing out flexbox here. The above is just page setup */
-.container {
-  display:flex;
-  flex-wrap:wrap;
-  flex-direction:column;
-  border:10px solid goldenrod;
-  height:100vh;
+/* display flex makes the children to behave as flexbox-items */
+/* two axis main axis: direction in which the items are laid out */
+/* cross-axis: ddirection perpendicular to main axis */
+
+.container{
+  /* display: inline-flex; */
+  /* inline flex makes the child behave as inline elements inside the flexbox */
+
+  display: flex;
+  /* flex makes them behave as block elements inside the container */
+
+  /* flex-direction: column; */
+  /* flex-direction decides the main axis, default row hence the items are laid out left right in english typing */
+  /* row/row-reverse/column/column-reverse */
+
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap ups the elements when the container runs out of space, default--nowrap */
+  /* nowrap/wrap/wrap-reverse */
+
+  /* justify-content: space-between; */
+  /* justify-content is used for laying out the elements across the main-axis */
+  /* flex-start/flex-end/center/space-between:spaces between not at the ends/space-evenly/space-around */
+  /* justify-content: space-bet */
+
+  /* align-items: baseline; */
+  /* align-items is used to layout the elements across the cross axis, default stretch */
+  /* stretch/center/flex-start/flex-end/baseline */
+
+  /* align-content: center; */
+  /* this is used to layout the items on the cross-axis, the extra spaces on the cross-axis */
+  /* flex-start/flex-end/center/space-between/space-evenly/space-around/stretch */
+  /* height: 100vh; */
 }
 
-.box {
-  flex-basis:250px;
-  flex-grow:1;
+/*
+.box:nth-child(even){
+  height: 120px;
+  align-self: flex-end;
+  // align self is used to for individual flex-items
+  //stretch:center:flex-start:flex-end:baseline
+}*/
+
+/* everything is set to order of zero */
+/* any number greater than 0 will set it to last and -ve will set it to start */
+/* .box7{
+  order: 1;
+}
+.box3{
+  order: -1;
+} */
+
+/* flex is short hand combination of flex-grow/flex-shrink/flex-basis */
+/* flex makes the element grow and shrink as required based on the available space */
+/* flex-basis sets the size in the ideal condition before the element starts to grow and shrink */
+.box1{
+  /* flex-basis: 400px;
+  flex-grow: 10;
+  flex-shrink: 5; */
+  flex: 10 5 400px;
+}
+.box2{
+  /* flex-basis: 400px;
+  flex-grow: 1;
+  flex-shrink: 1; */
+  flex: 1 1 400px;
 }
 
 
-.box3 {
-  flex-grow:5;
-}
 
-.box4 {
-  flex-basis:100px;  
-}
 
 
