@@ -1,0 +1,14 @@
+body{
+    background-color: aliceblue;
+}
+div{
+    background-color: green;
+}
+
+span {
+  background-color: aqua;
+}
+
+div ~ span {
+  background-color: yellow;
+}
