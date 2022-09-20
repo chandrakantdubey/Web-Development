@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
 import './App.css';
 import { useEffect } from 'react';
+import Play from './Play';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -36,6 +36,7 @@ function App() {
         <p onMouseMove={mouseMove}>Non Dpendent Counter: {noncount}</p>
         <button onClick={nonCountFunction}>Non Dependency Button</button>
       </div>
+      <Play />
     </div>
   );
 }

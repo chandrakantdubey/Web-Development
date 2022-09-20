@@ -68,3 +68,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.heading1 {
+  color: olivedrab;
+}
+.heading2{
+  color: rgb(42, 103, 70);
+}
