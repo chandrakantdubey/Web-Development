@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Navbar = () => {
+function Navbar() {
   return (
     <nav>
-      <img src='../img/airbnb-logo.png' />
+      <img src='../images/airbnb-logo.png' />
     </nav>
   );
 };
