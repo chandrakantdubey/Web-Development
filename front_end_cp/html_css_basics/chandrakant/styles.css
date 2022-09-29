@@ -1,40 +1,23 @@
-:root {
-    --superhero: 'Bangers', cursive;
-    --fantasy: 'MedievalSharp', cursive;
-    --space: 'Orbitron', sans-serif;
-    --military: 'Black Ops One', cursive;
-    --romantic: 'La Belle Aurore', cursive;
-    --scary: 'Creepster', cursive;
-    --cowboy: 'Rye', cursive;
-    --regular: sans-serif;
-    --fantasy: 'MedievalSharp', cursive;
-    --font: var(--regular);
-    --sharp: 0;
-    --soft: 10px;
-    --round: 100px;
-    
-    --image: var(--soft);
-    
-    --background: #f5f5f5;
-    --text: #222222;
-    
-    --light: var(--background);
-    --dark: var(--text);
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
 }
 
+.container{
+    width: 650px;
+    margin: auto;
+    background-color: aliceblue;
+}
 
-body, html {
-    margin: 0;
-    padding: 10px;
-    background: var(--background);
-    color: var(--text);
-    font-family: var(--font);
+li{
+    list-style-type: none;
 }
 
 img {
-    width: 30%;
-    border-radius: calc(var(--image) * 2);
-    border: 4px solid var(--text);
+    margin-top: 50px;
+    width: 300px;
+    border-radius: 10%;
 }
 
 a {
@@ -42,7 +25,6 @@ a {
 }
 
 input {
-    display: block;
     margin: 20px 0 0;
     width: 160px;
     box-sizing: border-box;
@@ -56,9 +38,6 @@ input {
     font-family: var(--font);
 }
 
-::placeholder {
-    color: var(--text);
-}
 
 button {
     border-radius: var(--image);
@@ -68,9 +47,11 @@ button {
     color: var(--background);
     font-weight: bold;
     box-sizing: border-box;
-    display: block;
     margin: 8px 0;
     cursor: pointer;
     font-family: var(--font);
     width: 160px;
+}
+.newsletter{
+    margin-right: 0;
 }
