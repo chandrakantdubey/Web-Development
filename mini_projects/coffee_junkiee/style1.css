@@ -1,0 +1,15 @@
+*{
+    font-size: 40;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    background-color: blue;
+    padding: 20px;
+    border: 20px;
+    margin: 20px;
+
+}
+h2{
+    background-color: red;
+}

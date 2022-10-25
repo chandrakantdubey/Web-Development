@@ -106,3 +106,19 @@ let str2 = [...str, 'World'];
 console.log(str2);
 // spread operator can be used only where comma separated values are expected
 console.log(`${str.toString()} World`);
+
+const rest = new Map();
+rest
+  .set('name', 'Classico Italiano')
+  .set(1, 'Firenze Italy')
+  .set(2, 'Lisbon, Portugal');
+let arrmap = [1, 2];
+rest.set(arrmap, 'Test');
+console.log(rest.size);
+console.log(rest.get(arrmap));
+
+const question = new Map([
+  ['question', 'What is the best programming language'],
+  [1, 'C'],
+  [2, 'Java'],
+]);
