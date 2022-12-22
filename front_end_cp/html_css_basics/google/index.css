@@ -4,7 +4,12 @@
 }
 .main{
     margin: 0 auto;
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
 }
 .logo-img{
     display: block;
@@ -36,9 +41,13 @@
     justify-content: center;
 }
 .btn{
-    border: none;
+    border: 1px solid;
     font-size: 16px;
-    padding: 5px 10px;
+    padding: 10px 20px;
     margin: 0 5px;
     border-radius: 5px;
+}
+a:hover{
+    color: aliceblue;
+    background-color: grey;
 }
