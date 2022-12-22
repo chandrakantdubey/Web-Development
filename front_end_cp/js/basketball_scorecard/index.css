@@ -1,0 +1,39 @@
+body{
+    font-family: 'cursed_timer_ulilregular';
+    text-align: center;
+}
+.scoreboard{
+    width: 575px;
+    background-color: #1B244A;
+    height: 385px;
+    color: #EEEEEE;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.home, .guest{
+    display: inline-block;
+    padding: 25px;
+    margin: 0 auto;
+}
+.guestname, .homename{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.homescore, .guestscore{
+    font-weight: 700;
+    font-size: 80px;
+    background-color: #080001;
+    padding-top: 10px;
+    margin: 0 auto;
+    color: #F94F6D;
+}
+
+button{
+    margin-top: 25px;
+    font-family: 'cursed_timer_ulilregular';
+    text-align: center;
+    color: #080001;
+}
