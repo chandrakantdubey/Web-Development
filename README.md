@@ -1,7 +1,7 @@
 # Chandrakant's Web Development Jounrey
 
-Hi, my name is Chandrakant and this is a track of my journey to web development.
+Hi, my name is Chandrakant and this is a repo of my mini projects that I built learning web-devlopment.
 
 This repository is built to include all my lessons from my classes, things I learn from youtube and other websites.
 
-I am also including all the projects I will do all along my journey.
+It is free to use by anyone, fork-it, create by looking at the projects want to make changes make a pull-request.
