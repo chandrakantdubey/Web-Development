@@ -1,0 +1,33 @@
+:root{
+    --banger: "Bangers", cursive;
+    --medivalsharp: "MedievalSharp" cursive;
+
+}
+
+.container{
+    width: 550px;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 30px 0;
+    text-align: center;
+    font-family: var(--medivalsharp);
+    font-size: 20px;
+}
+img{
+    width: 250px;
+    border: 2px solid black;
+}
+li,h2{
+    list-style: none;
+    font-family: cursive;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    background-color: bisque;
+    padding: 5px 10px;
+}
+
+.newsletter{
+    font-family: cursive;
+}

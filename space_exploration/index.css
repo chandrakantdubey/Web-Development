@@ -1,0 +1,52 @@
+@font-face {
+    font-family: revamped;
+    src: url('Revamped-X3q1a.ttf');
+}
+
+*{
+    font-family: revamped;
+    margin: 0;
+    text-align: center;
+    color: rgb(246, 247, 247);
+}
+
+.container{
+    background: url(./guillermo-ferla-Oze6U2m1oYU-unsplash.jpg);
+    background-size: cover;
+    padding: 10px 0 60px 0;
+}
+
+p{
+    margin: 20px auto;
+}
+
+h1{
+    margin: 50px auto;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 70%;
+    border-bottom: 5px solid rgb(200, 249, 239);
+}
+
+.btn{
+    color: rgb(242, 232, 219);
+    background-color: grey;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-shadow: 2px 2px rgb(6, 71, 129);
+    box-shadow: 1px 1px 3px aliceblue;
+}
+h2{
+    color: rgb(40, 56, 56);
+    padding-top: 10px;
+}
