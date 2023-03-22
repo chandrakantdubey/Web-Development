@@ -1,0 +1,115 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.intro{
+    background-color: blueviolet;
+    background-image: url(./intro-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    min-height: 30vh;
+    text-align: center;
+    padding: 0 1rem;
+    text-shadow: 0 2px 2px blueviolet;
+}
+p{
+    font-size: 1.25rem;
+}
+.intro p.top-text{
+    order: -1;
+    border-top: 5px solid white;
+    text-transform: uppercase;
+}
+.intro p.bottom-text{
+    order: 1;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+.intro h1{
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+.intro span{
+    font-size: 3.5rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem;
+}
+.content img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+.content h2{
+    font-size: 4vh;
+    margin-bottom: 0.125rem;
+}
+.content p{
+    margin-bottom: 2rem;
+}
+.content input{
+    width: 100%;
+    margin-bottom: 0.5rem;
+    min-height: 2rem;
+    padding: 0.25rem 0.5rem;
+    outline: 0;
+    border: 2px solid grey;
+    font-size: 1.5rem;
+    font-family: inherit;
+    border-radius: 0.25rem;
+}
+.content input[type="file"]{
+    border: 1px solid blueviolet;
+}
+
+.content button{
+    font-family: inherit;
+    font-size: 1.25rem;
+    width: 100%;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    background-color: blueviolet;
+    outline: 0;
+    border: 0;
+    border-radius: 0.25rem;
+    margin: 1rem 0;
+}
+
+@media (min-width: 720px){
+    .container{
+        flex-direction: row;
+    }
+    .intro{
+        min-height: 100vh;
+    }
+    .intro, .content{
+        width: 50%;
+    }
+}
+@media (min-width: 1080px){
+    .container{
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+}
