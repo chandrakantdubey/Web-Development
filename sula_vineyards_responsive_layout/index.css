@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: blueviolet;
+    color: white;
+}
+
+.header{
+    padding: 1.5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.header--branding h1{
+    margin-bottom: 0.25em;
+}
+.header--nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-inline-start: 0;
+    margin: 1.25em 0 1em;
+}
+.header--nav li{
+    list-style: none;
+}
+.header--nav li a{
+    text-decoration: none;
+    color: white;
+}
+.header--nav li a:hover{
+    color: burlywood;
+}
+@media (min-width: 720px){
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .header--nav ul{
+        flex-direction: row;
+    }
+    .header--branding h1{
+        font-size: 3em;
+    }
+    .header--branding p{
+        font-size: 1.5em;
+    }
+    .header--nav a{
+        font-size: 1.5em;
+    }
+}
+
+/* ////// main section /////// */
+
+section{
+    padding: 1.5em 0 2em;
+}
+section h2{
+    margin-bottom: 1.25em;
+    text-shadow: 1px 0 1px rgb(12, 1, 21);
+}
+section p{
+    margin-top: 1em;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+.section--one{
+    background-color: white;
+    color: rgb(118, 14, 215);
+}
+.section--one img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+}
+
+.section--two{
+    background-color: blueviolet;
+    color: white;
+}
+
+.gallery--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.gallery--container img{
+    width: 100%;
+}
+
+footer{
+    padding: 2em;
+}
+footer p{
+    background-color: white;
+    color: blueviolet;
+    font-size: 1.1em;
+    text-align: center;
+}
+img{
+    border-radius: 0.5em;
+}
+
+section p:last-of-type{
+    margin-bottom: 1.25em;
+}
+
+.btn-elements{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.btn{
+    display: block;
+    text-align: center;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: bold;
+    box-shadow: 0 0 2px black;
+    outline: none;
+}
+.btn-contact{
+    background-color: rgb(167, 89, 239);
+    color: white;
+}
+.btn-collections{
+    background-color: rgb(137, 27, 240);
+    color: white;
+}
+.btn-events{
+    background-color: rgb(156, 214, 232);
+    color: white;
+}
+.btn-learn{
+    background-color: rgb(29, 169, 212);
+    color: white;
+}
+
+@media (min-width: 720px){
+    section h2{
+        font-size: 2em;
+    }
+    section p{
+        font-size: 1.5em;
+    }
+    .gallery--container{
+        flex-direction: row;
+        gap: 0;
+    }
+    .gallery--container img{
+        width: 48.8%;
+    }
+    footer p{
+        font-size: 1.5em;
+    }
+    .btn-elements{
+        flex-direction: row;
+    }
+    .btn{
+        display: inline;
+    }
+}
