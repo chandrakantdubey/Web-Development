@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
     <script src="./index.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <h1 class="title">
-            Generate a password!!
-            <span class="random">
-            random password
-        </span>
-        </h1>
-        
-        <p class="description">
-            Never use an insecure password again
-        </p>
-        <button class="pwd-btn btn">
-            Generate password
-        </button>
-        <hr>
-        <div class="box">
-            <input type="text" id="pwd1" class="pwd">
-            <input type="text" id="pwd2" class="pwd">
-        </div>
-        <div class="copy">
-            <button class="copy-btn-1 btn">Copy Password 1</button>
-            <button class="copy-btn-2 btn">Copy Password 2</button>
-        </div>
+      <h1 class="title">
+        Generate a password!!
+        <span class="random"> random password </span>
+      </h1>
+
+      <p class="description">Never use an insecure password again</p>
+      <button class="pwd-btn btn">Generate password</button>
+      <label for="pwd-length"
+        >Length
+        <input type="number" id="pwd-length" />
+      </label>
+      <hr />
+      <div class="box">
+        <input type="text" id="pwd1" class="pwd" />
+        <input type="text" id="pwd2" class="pwd" />
+      </div>
+      <div class="copy">
+        <button class="copy-btn-1 btn">Copy Password 1</button>
+        <button class="copy-btn-2 btn">Copy Password 2</button>
+      </div>
     </div>
-</body>
+  </body>
 </html>

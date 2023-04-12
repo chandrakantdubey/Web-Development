@@ -1,94 +1,153 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: #094074;
-    /* background-color: #5ADBFF; */
+* {
+  margin: 0;
+  padding: 0;
+  color: #094074;
 }
-.wrapper{
-    width: 720px;
-    margin: 0 auto;
-    background-color: rgb(202, 217, 231);
-    padding-bottom: 0.5rem;
-}
-.main-heading{
-    background-image: url(../images/main-bg.jpg);
-    margin: 0 auto;
-    background-size: cover;
-}
-.heading-content{
-    padding: 5rem 1rem;
-} 
-.title{
-    background-color: #5ADBFF;
-    margin: 0 auto;
-    width: 12rem;
-    padding: 0.125rem 0.25rem;
-    border-radius: 1rem;
-    margin-bottom: 0.75rem;
-    opacity: 0.9;
-}
-.tagline{
-    width: 60%;
-    background-color: #5ADBFF;
-    padding: 0.125rem 02.35rem;
-    border-radius: 1rem;
-    margin: 0 auto;
-    opacity: 0.9;
+body {
+  background-color: #bce5ef;
 }
 
+.wrapper {
+  width: 95%;
+  max-width: 920px;
+  margin: 0 auto;
+  background-color: rgb(202, 217, 231);
+  padding-bottom: 0.5rem;
+  border-top: 3rem solid rgb(144, 183, 183);
+  border-bottom: 2rem solid rgb(144, 183, 183);
+}
 
-.main-content{
-    padding: 1rem;
+.hero {
+  background-image: url(../images/main-bg.jpg);
+  margin: 0 auto;
+  background-size: cover;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.title {
+  width: fit-content;
+  background-color: #5adbff;
+  margin: 0 auto;
+  padding: 0.125rem 0.5rem;
+  border-radius: 1rem;
+  margin-bottom: 0.75rem;
+  opacity: 0.9;
+  font-size: 42px;
+}
+.tagline {
+  width: fit-content;
+  background-color: #5adbff;
+  padding: 0.125rem 0.5rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  opacity: 0.9;
+  font-size: 32px;
+}
+
+.main-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(144, 183, 183);
+  text-align: center;
+}
+.content {
+  padding: 5px;
+  width: 33.33%;
+  margin: 0 5px;
+}
+.heading {
+  font-size: 36px;
+}
+.description {
+  font-size: 24px;
+}
+
+.temple {
+  background-image: url("../images/temples.jpg");
+  background-size: cover;
+}
+.temple:hover {
+  background-image: url("../images/festival.jpg");
+  background-size: cover;
+}
+
+.wineyards {
+  background-image: url("../images/wineyards.webp");
+  background-size: cover;
+}
+.wineyards:hover {
+  background-image: url("../images/wineyards-fest.webp");
+  background-size: cover;
+}
+
+.trek {
+  background-image: url("../images/trek.jpg");
+  background-size: cover;
+}
+.trek:hover {
+  background-image: url("../images/train-ride-ghats.jpg");
+  background-size: cover;
+}
+
+.descriptive-img {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid;
+}
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .content {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    background-color: rgb(144, 183, 183);
-}
-.content{
-    padding: 5px;
-    width: 30%;
-    margin: 0 5px;
-}
-.descriptive-img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-.trek:hover{
-    background-image: url(../images/train-ride-ghats.jpg);
-}
-.wineyards:hover{
-    background-image: url(../images/wineyards-fest.webp);
-}
-.temple:hover{
-    background-image: url(../images/temples.jpg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .descriptive-img {
+    border-radius: 0;
+    width: 400px;
+    height: 300px;
+  }
+  .content p {
+    font-size: 20px;
+  }
+  .hero p {
+    font-size: 20px;
+  }
+  .wrapper {
+    border-top: 1.5rem solid rgb(144, 183, 183);
+    border-bottom: 1.5rem solid rgb(144, 183, 183);
+  }
 }
 
+/* business card */
 .avatar {
-    width: 150px;
-    height: 150px;
-    border: 2px solid #5ADBFF;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #5adbff;
 }
 .card {
-    width: 300px;
-    margin: 30px auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    text-align: center;
-    background: #ddebf8;
-    color: #533A7B;
-    border-bottom: 6px solid #533A7B;
-    border-radius: 10px;
-    box-shadow: 5px -5px #98C1D9;
+  width: 300px;
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  text-align: center;
+  background: #ddebf8;
+  color: #533a7b;
+  border-bottom: 6px solid #533a7b;
+  border-radius: 10px;
+  box-shadow: 5px -5px #98c1d9;
 }
 .border-blue {
-    border: 1px dotted blue;
+  border: 1px dotted blue;
 }
-.guide-info p{
-    margin: 5px 0;
+.guide-info p {
+  margin: 5px 0;
 }
-
-
