@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tuts</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1 class="fixed">HTML - Hypertext Markup Language</h1>
+    
+    <br>
+    <div>
+        <p>HTML is a language made of elements which can be applied to pieces of text to give them different meaning in a document, structure page into logical sections and embed content such as images and videos into a page.</p>
+        <li>Hypertext - link to page on same or differenet website.</li>
+        <li>Tags are not case sensitive - lower case is convention.</li>
+        <li>The HTML parser reduces each sequence of whitespace to a single space when rendering the code.</li>
+        <li>An element is written as below;</li>
+        <pre><h4><code> &lt;p&gt; An element made up of opening and closing tag &lt;/p&gt; </code></h4></pre>
+    </div>
+
+    <hr class="section-separator-line">
+
+    <div>
+        <h2>Nesting of elements</h2>
+        <li>An element can be placed inside another element.</li>
+        <pre><h4><code> &lt;p&gt; Opening and closing &lt;strong&gt;<em> tags </em> &lt;/strong&gt; inside the parent element. &lt;/p&gt; </code></h4></pre>
+    </div>
+
+    <hr class="section-separator-line">
+    
+    <div>
+        <h2>Block vs Inline elements</h2>
+        <p>Tags are of two types block and inline.</p>
+        <div class="block-level">
+            <div class="b">
+                <h3>Block Level</h3>
+                <hr class="bis">
+                <li>Block level elements occupy entire width.</li>
+                <hr class="bis">
+                <li>Start on new line and push the preceeding element to new line.</li>
+            </div>
+            <hr class="inline-level">
+            <div class="i">
+                <h3>Inline Elements</h3>
+                <hr class="bis">
+                <li>Take up the width required for the content.</li>
+                <hr class="bis">
+                <li>Inline elements can start anywhere in a line.</li>
+            </div>
+        </div>
+    </div>
+
+    <hr class="section-separator-line">
+
+    <div>
+        <h2>Void Elements</h2>
+        <li>Some elements consist of a single tag, which are used to insert/embed something in the document.</li>
+    </div>
+
+    <hr class="section-separator-line">
+
+    <div>
+        <h2>Atrributes</h2>
+        <p>Attributes contain extra information about the element that won't appear in the content.</p>
+        <p>Atributes can be global or element specific</p>
+        <p>An atrribute should have:</p>
+        <li>A space between it and the element name. (For an element with more than one attribute, the attributes should be separated by spaces too.)</li>
+        <li>The attribute name, followed by an equal sign.</li>
+        <li>An attribute value, wrapped with opening and closing quote marks.</li>
+        <p>Sometimes you will see attributes written without values they are called boolean attributes.</p>
+        <p>Atrributes can be written using a single/double quotes.</p>
+        <p>Atrributes can be written without quotes if only single attribute is to be written.</p>
+    </div>
+
+    <hr class="section-separator-line">
+
+    <div>
+        <h2>Anatomy of HTML document</h2>
+        <h3><code><pre>
+        &lt;!DOCTYPE html&gt;<br>
+        &lt;html lang="en-US"&gt;<br>
+        &lt;head&gt;<br>
+            &lt;meta charset="utf-8" /&gt;<br>
+            &lt;title&gt;My Webpage&lt;/title&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+            &lt;p&gt;This is my page&lt;/p&gt;<br>
+        &lt;/body&gt;<br>
+        &lt;/html&gt;<br></pre></code></h3>
+    </div>
+</body>
+</html>
